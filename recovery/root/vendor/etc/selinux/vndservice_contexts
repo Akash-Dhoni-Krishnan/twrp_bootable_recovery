@@ -1,0 +1,10 @@
+#line 1 "system/sepolicy/vendor/vndservice_contexts"
+manager                 u:object_r:service_manager_vndservice:s0
+*                       u:object_r:default_android_vndservice:s0
+#line 1 "device/mediatek/sepolicy_vndr/bsp/non_plat/vndservice_contexts"
+# ==============================================
+# Common SEPolicy Rule
+# ==============================================
+
+android.IRemosaicDaemon u:object_r:remosaic_daemon_service:s0
+
