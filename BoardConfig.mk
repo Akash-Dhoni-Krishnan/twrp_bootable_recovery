@@ -130,7 +130,8 @@ TW_INCLUDE_RESETPROP := true
 TW_INCLUDE_FASTBOOTD := true
 TW_H_OFFSET := -80
 TW_Y_OFFSET := 95
-TW_DEVICE_VERSION := build by Chinedu +2349039121780 and ADK-KuttyPulla
+TW_DEVICE_VERSION := build by ADK-KuttyPulla and Chinedu(Initial Tree Helping)
+TW_DEFAULT_APP_CERTIFICATE := platform
 
 # Debugging
 TWRP_INCLUDE_LOGCAT := true
@@ -144,3 +145,6 @@ SELINUX_IGNORE_NEVERALLOWS := true
 # Recovery
 BOARD_SUPPRESS_SECURE_ERASE := true
 TARGET_RECOVERY_FSTAB := $(DEVICE_PATH)/recovery/root/system/etc/recovery.fstab
+
+#GPT
+DEFAULT_APPLICABLE_LICENSES := Apache-2.0
