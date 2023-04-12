@@ -22,8 +22,7 @@ license {
     name: "bootable_recovery_applypatch_license",
     visibility: [":__subpackages__"],
     license_kinds: [
-        "SPDX-license-identifier-Apache-2.0",
-    ],
+        "Apache-2.0"],
     license_text: [
         "NOTICE",
     ],
