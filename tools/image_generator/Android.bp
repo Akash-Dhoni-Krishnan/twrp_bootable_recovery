@@ -18,7 +18,7 @@ package {
     // all of the 'license_kinds' from "bootable_recovery_license"
     // to get the below license kinds:
     //   SPDX-license-identifier-Apache-2.0
-    default_applicable_licenses: ["bootable_recovery_license"],
+    DEFAULT_APPLICABLE_LICENSES: ["bootable_recovery_license"],
 }
 
 java_library_host {
