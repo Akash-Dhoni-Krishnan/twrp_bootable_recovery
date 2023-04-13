@@ -109,7 +109,9 @@ cc_binary {
         "libapplypatch",
         "libedify",
         "libotautil",
-        "libbspatch", //External_Dependencies
+
+        // External dependencies.
+        "libbspatch",
         "libbrotli",
         "libbz",
     ],
@@ -180,4 +182,3 @@ cc_binary_host {
         "libz_stable",
     ],
 }
-	
