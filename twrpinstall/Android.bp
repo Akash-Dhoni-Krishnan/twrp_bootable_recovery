@@ -88,3 +88,4 @@ cc_library_static {
     export_shared_lib_headers: [
         "librecovery_ui",
     ],
+}
