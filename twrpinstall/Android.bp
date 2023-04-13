@@ -63,7 +63,6 @@ cc_library_static {
 
     include_dirs: [
         "bootable/recovery",
-        "bootable/recovery/minadbd",
         "bootable/recovery/install/include",
         "bootable/recovery/recovery_utils/include",
     ],
@@ -89,4 +88,3 @@ cc_library_static {
     export_shared_lib_headers: [
         "librecovery_ui",
     ],
-}
