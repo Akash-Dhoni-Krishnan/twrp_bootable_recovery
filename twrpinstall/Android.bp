@@ -76,12 +76,9 @@ cc_library_static {
         "verifier.cpp",
     ],
 
-    static_libs: [
-        "libminadbd_headers",
-    ],
-
     shared_libs: [
         "librecovery_ui",
+        "libminadbd_headers",
     ],
 
     export_include_dirs: [
