@@ -109,8 +109,6 @@ cc_binary {
         "libapplypatch",
         "libedify",
         "libotautil",
-
-        // External dependencies.
         "libbspatch",
         "libbrotli",
         "libbz",
