@@ -42,8 +42,6 @@ cc_defaults {
 
     static_libs: [
         "libotautil",
-
-        // external dependencies    
         "libvintf",
         "libfstab",
     ],
@@ -77,6 +75,11 @@ cc_library_static {
         "twinstall.cpp",
         "verifier.cpp",
     ],
+
+    static_libs: [
+        "libminadbd_headers",
+    ],
+
     shared_libs: [
         "librecovery_ui",
     ],
