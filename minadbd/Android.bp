@@ -32,8 +32,6 @@ cc_defaults {
     ],
 }
 
-// `libminadbd_services` is analogous to the `libadbd_services` for regular `adbd`, but providing
-// the sideload service only.
 cc_library_static {
     name: "libminadbd_services",
     recovery_available: true,
@@ -67,7 +65,7 @@ cc_library_headers {
     export_include_dirs: [
         "include",
     ],
-    // adb_install.cpp
+
     visibility: [
         "//bootable/recovery/install",
         "//bootable/recovery/twrpinstall",
@@ -97,6 +95,13 @@ cc_binary {
         "libminadbd_services",
         "libfusesideload",
         "librecovery_utils",
+        "libadb_crypto",
+        "libadb_tls_connection",
+        "libadbd",
+        "libadbd_core",
+        "libbrotli",
+        "libadb_protos",
+        "librecovery_utils",
     ],
 
     required: [
@@ -122,8 +127,15 @@ cc_test {
     static_libs: [
         "libminadbd_services",
         "libfusesideload",
-        "librecovery_utils",
         "libotautil",
+        "libadb_crypto",
+        "libadb_pairing_connection",
+        "libadb_tls_connection",
+        "libadbd",
+        "libadbd_core",
+        "libbrotli",
+        "libadb_protos",
+        "librecovery_utils",
     ],
 
     shared_libs: [
