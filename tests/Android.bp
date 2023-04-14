@@ -127,7 +127,7 @@ cc_test {
          "libbrotli",
          "libbz",
          "librecovery_utils",
-    ]'
+    ],
     
     test_suites: ["device-tests"],
 
