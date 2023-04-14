@@ -122,6 +122,13 @@ cc_test {
         "libupdater_device_defaults",
     ],
 
+    shared_libs: [
+         "libbspatch",
+         "libbrotli",
+         "libbz",
+         "librecovery_utils",
+    ]'
+    
     test_suites: ["device-tests"],
 
     srcs: [
